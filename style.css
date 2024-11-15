@@ -1,0 +1,119 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Globalne ustawienia */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Ciemne tło */
+    color: #E0E0E0; /* Jasny tekst */
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Elementy nagłówka rozstawione na lewo i prawo */
+    align-items: center;
+    background-color: #1F1F1F; /* Ciemniejsze tło */
+    color: #FFF;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FF5722;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+nav a:hover, nav a.active {
+    background-color: #FF5722;
+    color: #FFF;
+}
+
+/* Sekcje CV */
+.section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #1E1E1E;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 1000px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.skill-bar {
+    width: 100%;
+    background-color: #444;
+    border-radius: 4px;
+    height: 12px;
+    margin-top: 8px;
+}
+.progress {
+    background-color: #FF5722;
+    height: 100%;
+    border-radius: 4px;
+}
+
+h2 {
+    color: #FF5722;
+}
+h3 {
+    color: #ff915a;
+}
+h4 {
+    color: #ffbfa0;
+}
+.header img.avatar {
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    border: 2px solid #fff;
+}
+.section .icon-circle {
+    background-color: #FF5722;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+.section .icon {
+    width: 22px;
+    height: 22px;
+}
+.linkedin-link {
+    color: #FF5722;  /* Ustaw kolor tekstu na niebieski */
+    text-decoration: none;  /* Opcjonalnie usuń podkreślenie linku */
+}
+/* Przycisk */
+button {
+    padding: 12px 25px;
+    background-color: #FF5722;
+    color: #FFF;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}

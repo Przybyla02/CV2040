@@ -1,0 +1,303 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #e0e0e0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+}
+
+/* Header */
+.header {
+    display: flex;
+    flex-direction: column; /* Stack header content vertically */
+    align-items: center;
+    padding: 20px;
+    background-color: #444;
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header img.avatar {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px; /* Space between the avatar and text */
+    border: 3px solid #fff;
+}
+
+.header-info h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.header-info p {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    color: #d1d1d1;
+}
+
+/* Content */
+.content {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+    flex-direction: row; /* Keep the content items side by side */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 35%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Content */
+.main-content {
+    width: 65%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Titles with Circle Icons */
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.section .icon-circle {
+    background-color: #333;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.section .icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Timeline for Experience and Education */
+.timeline-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.timeline-item span {
+    display: block;
+    font-size: 0.7rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Timeline Line */
+.timeline {
+    position: relative;
+    padding-left: 20px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 8px;
+    width: 2px;
+    height: 100%;
+    background-color: #ccc;
+}
+
+/* Timeline Item */
+.timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 12px;
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 50%;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+    background-color: #444;
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.footer p {
+    font-size: 1rem;
+    color: #ccc;
+}
+.fill {
+    height: 100%;
+    background-color: #333;
+    border-radius: 4px;
+}
+
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Card Styling for List Items (like projects or achievements) */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+.cvsection {
+    margin-bottom: 20px;
+  }
+  
+  .cvskill {
+    margin-bottom: 15px;
+  }
+  
+  .language {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .level {
+    color: #666;
+  }
+  
+  .skill-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 4px;
+    height: 10px;
+    margin-top: 5px;
+  }
+  
+  .progress {
+    background-color: #000000; 
+    height: 100%;
+    border-radius: 4px;
+  }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header img.avatar {
+        margin-bottom: 10px; /* Space between the avatar and text */
+    }
+
+
+    .header-info h1 {
+        font-size: 1.8rem;
+    }
+
+    .footer p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-info h1 {
+        font-size: 1.5rem;
+    }
+
+    .section h2 {
+        font-size: 1.3rem;
+    }
+
+    .timeline-item h3 {
+        font-size: 1rem;
+    }
+
+    .card h3 {
+        font-size: 1.2rem;
+    }
+}

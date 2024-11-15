@@ -1,0 +1,279 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    flex-direction: column;
+    padding: 10px;
+    overflow-x: hidden;
+    max-width: 100%;
+    overflow-y: auto;
+    align-items: center;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 20px 10px;
+    background-color: #0066cc;
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header img.avatar {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 8px;
+    border: 3px solid #fff;
+}
+
+.header-info h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.header-info p {
+    font-size: 0.9rem;
+    color: #e0e0e0;
+}
+
+/* Content */
+.content {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Section Titles */
+.section {
+    background-color: #fff;
+    padding: 20px; /* Zwiększono padding, aby miały więcej miejsca */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Zabezpieczenie, żeby nic nie wychodziło poza sekcję */
+}
+
+.section h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #0066cc;
+    margin-bottom: 6px;
+}
+
+.section .icon-circle {
+    background-color: #33cfff;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.section .icon {
+    width: 14px;
+    height: 14px;
+}
+
+/* Timeline */
+.timeline {
+    padding-left: 12px;
+}
+
+.timeline-item {
+    margin-bottom: 15px;
+}
+
+.timeline-item h3 {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.timeline-item span {
+    display: block;
+    font-size: 0.7rem;
+    color: #777;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 8px;
+    width: 2px;
+    height: 100%;
+    background-color: #e0e0e0;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 10px;
+    width: 8px;
+    height: 8px;
+    background-color: #0066cc;
+    border-radius: 50%;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    background-color: #0066cc;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer p {
+    font-size: 0.8rem;
+    color: #e0e0e0;
+}
+
+/* Button Styles */
+button {
+    padding: 8px 15px;
+    background-color: #33cfff;
+    color: #fff;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #33cfff;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Card Styling for List Items */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px; /* Dodano więcej przestrzeni w card */
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 6px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* Skill Bars */
+.cvskill {
+    margin-bottom: 12px;
+}
+
+.skill-bar {
+    background-color: #ddd;
+    border-radius: 4px;
+    height: 8px;
+    margin-top: 4px;
+}
+
+.progress {
+    background-color: #0066cc;
+    height: 100%;
+    border-radius: 4px;
+}
+
+/* Two-Column Layout for Skills and Languages */
+.cvsection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cvskill,
+.language {
+    width: 48%; /* Make each section take up half the space */
+}
+
+/* List Styling (fix overflow issue) */
+ul {
+    padding-left: 20px; /* Dodano padding po lewej stronie, aby lista nie wychodziła poza box */
+    list-style-type: disc; /* Upewniamy się, że lista używa punktów */
+}
+
+li {
+    margin-bottom: 10px; /* Dodano odstęp między elementami listy */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-info h1 {
+        font-size: 1.5rem;
+    }
+
+    .section h2 {
+        font-size: 1.3rem;
+    }
+
+    .footer p {
+        font-size: 0.75rem;
+    }
+
+    .content {
+        max-width: 90%;
+        gap: 15px;
+    }
+
+    /* Adjusting two-column layout for smaller screens */
+    .cvskill,
+    .language {
+        width: 100%; /* Stack vertically on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .header-info h1 {
+        font-size: 1.3rem;
+    }
+
+    .section h2 {
+        font-size: 1.2rem;
+    }
+
+    .card h3 {
+        font-size: 1.1rem;
+    }
+
+    .footer p {
+        font-size: 0.7rem;
+    }
+}
